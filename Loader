@@ -2,7 +2,7 @@ local PlaceId = game.PlaceId
 local SupportedGames = {
 
     -- Flick Game
-    [136801880565837] = function() -- 🔴 เปลี่ยนเป็น PlaceId จริง
+    [136801880565837] = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/GGXD99/XcxHub/refs/heads/main/script/Flick/Flick.lua"))()
     end,
 
