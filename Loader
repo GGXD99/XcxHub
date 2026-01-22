@@ -20,6 +20,11 @@ local SupportedGames = {
     [84988808589910] = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/GGXD99/XcxHub/refs/heads/main/script/Rogue-Piece/SCRIPT.lua"))()
     end,
+    
+    -- CENTAURA
+    [8735521924] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GGXD99/XcxHub/refs/heads/main/script/CENTAURA/Ui.lua"))()
+    end,
 }
 
 --// Check Game
