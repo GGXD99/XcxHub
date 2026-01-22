@@ -1,9 +1,16 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local UINEWVWE = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local TextButton = Instance.new("TextButton")
-local TextButton_2 = Instance.new("TextButton")
+local NewUi = Instance.new("TextButton")
+local OldUi = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
+
+--Properties:
 
 UINEWVWE.Name = "UINEWVWE"
 UINEWVWE.Parent = game:GetService"CoreGui"
@@ -20,33 +27,35 @@ Frame.Size = UDim2.new(0, 183, 0, 183)
 
 UICorner.Parent = Frame
 
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0, 0, 0.289617479, 0)
-TextButton.Size = UDim2.new(0, 183, 0, 50)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "New Ui"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextWrapped = true
+NewUi.Name = "NewUi"
+NewUi.Parent = Frame
+NewUi.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+NewUi.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NewUi.BorderSizePixel = 0
+NewUi.Position = UDim2.new(0, 0, 0.289617479, 0)
+NewUi.Size = UDim2.new(0, 183, 0, 50)
+NewUi.Font = Enum.Font.SourceSans
+NewUi.Text = "New Ui"
+NewUi.TextColor3 = Color3.fromRGB(255, 255, 255)
+NewUi.TextScaled = true
+NewUi.TextSize = 14.000
+NewUi.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+NewUi.TextWrapped = true
 
-TextButton_2.Parent = Frame
-TextButton_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(0, 0, 0.606557369, 0)
-TextButton_2.Size = UDim2.new(0, 183, 0, 50)
-TextButton_2.Font = Enum.Font.SourceSans
-TextButton_2.Text = "Old Ui"
-TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.TextScaled = true
-TextButton_2.TextSize = 14.000
-TextButton_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.TextWrapped = true
+OldUi.Name = "OldUi"
+OldUi.Parent = Frame
+OldUi.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+OldUi.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OldUi.BorderSizePixel = 0
+OldUi.Position = UDim2.new(0, 0, 0.606557369, 0)
+OldUi.Size = UDim2.new(0, 183, 0, 50)
+OldUi.Font = Enum.Font.SourceSans
+OldUi.Text = "Old Ui"
+OldUi.TextColor3 = Color3.fromRGB(255, 255, 255)
+OldUi.TextScaled = true
+OldUi.TextSize = 14.000
+OldUi.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+OldUi.TextWrapped = true
 
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -61,10 +70,10 @@ TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 25.000
 TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
-TextButton.MouseButton1Click:Connect(function()
-	UINEWVWE:Destroy()
+NewUi.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GGXD99/XcxHub/refs/heads/main/script/CENTAURA/New.lua"))()
 end)
 
-TextButton_2.MouseButton1Click:Connect(function()
-	game:GetService("ReplicatedStorage").Remotes:WaitForChild("OpenGui"):FireServer("OldGui")
+OldUi.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GGXD99/XcxHub/refs/heads/main/script/CENTAURA/old.lua"))()
 end)
