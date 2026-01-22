@@ -1,16 +1,9 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local UINEWVWE = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local NewUi = Instance.new("TextButton")
 local OldUi = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
-
---Properties:
 
 UINEWVWE.Name = "UINEWVWE"
 UINEWVWE.Parent = game:GetService"CoreGui"
