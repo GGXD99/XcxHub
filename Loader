@@ -5,13 +5,10 @@ local SupportedGames = {
     [136801880565837] = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/GGXD99/XcxHub/refs/heads/main/script/Flick/Flick.lua"))()
     end,
-
-    -- ตัวอย่างเกมอื่น
-    -- [9876543210] = function()
-    --     loadstring(game:HttpGet(
-    --         "https://raw.githubusercontent.com/GGXD99/XcxHub/main/script/OtherGame/Main.lua"
-    --     ))()
-    -- end,
+    
+    [76668493349114] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GGXD99/XcxHub/refs/heads/main/script/SniperorDie/main.lua"))()
+    end,
 }
 
 --// Check Game
