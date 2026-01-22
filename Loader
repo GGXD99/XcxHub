@@ -5,7 +5,8 @@ local SupportedGames = {
     [136801880565837] = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/GGXD99/XcxHub/refs/heads/main/script/Flick/Flick.lua"))()
     end,
-    
+
+    -- SNIPE-OR-DIE
     [76668493349114] = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/GGXD99/XcxHub/refs/heads/main/script/SniperorDie/main.lua"))()
     end,
