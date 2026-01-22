@@ -15,6 +15,11 @@ local SupportedGames = {
     [2474168535] = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/GGXD99/XcxHub/refs/heads/main/script/Westbound/script.lua"))()
     end,
+    
+    -- Rogue Piece
+    [84988808589910] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GGXD99/XcxHub/refs/heads/main/script/Rogue-Piece/SCRIPT.lua"))()
+    end,
 }
 
 --// Check Game
