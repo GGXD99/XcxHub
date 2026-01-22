@@ -1,1 +1,26 @@
+local PlaceId = game.PlaceId
+local SupportedGames = {
 
+    -- Flick Game
+    [136801880565837] = function() -- 🔴 เปลี่ยนเป็น PlaceId จริง
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GGXD99/XcxHub/refs/heads/main/script/Flick/Flick.lua"))()
+    end,
+
+    -- ตัวอย่างเกมอื่น
+    -- [9876543210] = function()
+    --     loadstring(game:HttpGet(
+    --         "https://raw.githubusercontent.com/GGXD99/XcxHub/main/script/OtherGame/Main.lua"
+    --     ))()
+    -- end,
+}
+
+--// Check Game
+if SupportedGames[PlaceId] then
+    SupportedGames[PlaceId]()
+else
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "XcxHub",
+        Text = "This game is not supported ❌",
+        Duration = 5
+    })
+end
