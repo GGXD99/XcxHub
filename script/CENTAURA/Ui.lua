@@ -65,8 +65,10 @@ TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 NewUi.MouseButton1Click:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GGXD99/XcxHub/refs/heads/main/script/CENTAURA/New.lua"))()
+	NewUi:Destroy()
 end)
 
 OldUi.MouseButton1Click:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GGXD99/XcxHub/refs/heads/main/script/CENTAURA/old.lua"))()
+	OldUi:Destroy()
 end)
