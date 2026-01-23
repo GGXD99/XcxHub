@@ -1,3 +1,7 @@
+if game:GetService("CoreGui"):FindFirstChild("UINEWVWE") then
+    game:GetService("CoreGui").ToraScript:Destroy()
+end
+
 local UINEWVWE = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
