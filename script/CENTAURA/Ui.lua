@@ -7,7 +7,8 @@ local TextLabel = Instance.new("TextLabel")
 
 UINEWVWE.Name = "UINEWVWE"
 UINEWVWE.Parent = game:GetService"CoreGui"
-UINEWVWE.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.DisplayOrder = 999999 -- << สำคัญ
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
 UINEWVWE.ResetOnSpawn = false
 
 Frame.Parent = UINEWVWE
