@@ -1,5 +1,5 @@
 if game:GetService("CoreGui"):FindFirstChild("UINEWVWE") then
-    game:GetService("CoreGui").ToraScript:Destroy()
+    game:GetService("CoreGui").UINEWVWE:Destroy()
 end
 
 local UINEWVWE = Instance.new("ScreenGui")
